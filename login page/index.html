@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and sign up</title>
+</head>
+<style>
+    body {
+        background-color: #00bf67;
+    }
+    
+    form {
+        border: 2px solid white;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        margin-top: 40px;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    }
+    
+    form input {
+        background-color: rgb(238, 238, 238);
+        border: none;
+        outline-style: none;
+    }
+    
+    h1 {
+        border-bottom: 4px solid green;
+        padding: 5px;
+        display: inline;
+    }
+    
+    .container {
+        margin-top: 40px;
+        outline: none;
+    }
+    
+    .container input {
+        padding: 5px 30px;
+    }
+    
+    .remember {
+        margin-top: 20px;
+    }
+    
+    #rem {
+        margin: 5px;
+    }
+    
+    .account {
+        margin: 40px;
+    }
+    
+    .btn {
+        padding: 5px 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .btn:hover {
+        background-color: #00bf67;
+        color: white;
+        transition: all ease-in-out 0.4s;
+        border: 2px solid grey;
+    }
+    
+    label {
+        font-size: large;
+        font-weight: 100;
+    }
+    
+    #btn {
+        background-color: rgb(235, 235, 235);
+        border: 1px solid black;
+        padding: 5px 13px;
+        text-decoration: none;
+        border-radius: 3px;
+        color: black;
+    }
+    
+    #btn:hover {
+        background-color: #00bf67;
+        color: white;
+        border: 2px solid rgb(226, 226, 226);
+        border-radius: 9px;
+        transition: all ease-in-out 0.4s;
+    }
+</style>
+
+<body>
+
+
+
+    <form class="login">
+        <h1>login</h1>
+        <div class="container">
+            <label for="text">Username</label>
+            <input type="text">
+        </div>
+        <div class="container">
+            <label for="text">Password</label>
+            <input type="text">
+        </div>
+        <div class="remember">
+            <input type="checkbox" name="Remember Me" id="rem">Remember Me
+        </div>
+        <div class="account">Don't have an Account? <a href="/signup.html">sign up</a>
+        </div>
+        <div><a id="btn" href="/login.html">Login</a>
+        </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<style>
+    body {
+        background-color: #00bf67;
+        margin: 0;
+        padding: 0;
+    }
+    
+    form {
+        background-color: white;
+        width: 89vw;
+        margin: auto;
+        box-shadow: 4px 4px 20px black;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 5px;
+    }
+    
+    form input {
+        background-color: rgb(238, 238, 238);
+        border: none;
+        outline-style: none;
+    }
+    
+    label {
+        font-weight: 10;
+    }
+    
+    .container-s {
+        margin-top: 40px;
+        outline: none;
+    }
+    
+    .container-s input {
+        padding: 5px 30px;
+    }
+    
+    #btn {
+        background-color: rgb(235, 235, 235);
+        border: 1px solid black;
+        padding: 5px 13px;
+        text-decoration: none;
+        border-radius: 3px;
+        color: black;
+    }
+    
+    #btn:hover {
+        background-color: #00bf67;
+        color: white;
+        border: 2px solid rgb(226, 226, 226);
+        border-radius: 9px;
+        transition: all ease-in-out 0.4s;
+    }
+    
+    .butd {
+        margin-top: 40px;
+    }
+    
+    .inputd {
+        margin-top: 20px;
+    }
+    
+    h1 {
+        border-bottom: 4px solid green;
+        padding: 5px;
+        display: inline;
+    }
+    
+    #show {
+        color: #00bf67;
+    }
+    
+    #nexshow {
+        color: #bf1d00;
+    }
+</style>
+
+
+<body>
+    <form action="" class="signup">
+        <h1>Verify Your Number</h1>
+
+        <div class="container-s">
+            <label for="text">Phone Number</label>
+            <input type="text" placeholder="Phone Number">
+
+        </div>
+        <div class="container-s">
+            <label for="text">First Name</label>
+            <input type="text" placeholder="Email">
+        </div>
+        <div>
+            <p>Allready Have an Account?<a href="/index.html">Login</a></a>
+            </p>
+
+        </div>
+        <div class="butd">
+            <button id="btn">Create Account</button>
+        </div>
+        <p id="show"></p>
+        <h3 id="nexshow"></h3>
+
+
+
+    </form>
+    <script>
+        let button = document.getElementById('btn')
+
+
+        {
+
+            button.addEventListener('click', function(btn) {
+                let para = document.getElementById('show')
+                const cpara = para.innerHTML = 'acount has been created successfully...'
+                let npara = document.getElementById('nexshow')
+                const cnxpara = npara.innerHTML = 'please Login'
+
+
+            })
+
+        }
+    </script>
+</body>
+
+</html>
